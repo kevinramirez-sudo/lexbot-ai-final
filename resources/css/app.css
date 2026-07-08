@@ -1,0 +1,115 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    html {
+        background: #f8fafc;
+    }
+
+    body {
+        @apply min-h-screen bg-slate-50 font-sans text-slate-800 antialiased;
+    }
+
+    button,
+    a,
+    input,
+    select,
+    textarea {
+        @apply transition duration-150 ease-out;
+    }
+
+    input,
+    select,
+    textarea {
+        @apply border-slate-300 focus:border-blue-600 focus:ring-blue-600;
+    }
+}
+
+@layer components {
+    .app-shell {
+        @apply min-h-screen bg-slate-50;
+    }
+
+    .page-container {
+        @apply mx-auto w-full max-w-7xl px-4 py-7 sm:px-6 lg:px-8;
+    }
+
+    .page-kicker {
+        @apply text-xs font-bold uppercase tracking-[0.18em] text-blue-700;
+    }
+
+    .page-title {
+        @apply mt-1 text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl;
+    }
+
+    .page-subtitle {
+        @apply mt-2 max-w-3xl text-sm leading-6 text-slate-600 sm:text-base;
+    }
+
+    .panel {
+        @apply rounded-2xl border border-slate-200 bg-white shadow-sm;
+    }
+
+    .panel-body {
+        @apply p-5 sm:p-6;
+    }
+
+    .stat-card {
+        @apply rounded-2xl border border-slate-200 bg-white p-5 shadow-sm;
+    }
+
+    .btn-primary {
+        @apply inline-flex items-center justify-center rounded-xl bg-blue-700 px-4 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-blue-800 focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-60;
+    }
+
+    .btn-secondary {
+        @apply inline-flex items-center justify-center rounded-xl border border-slate-300 bg-white px-4 py-2.5 text-sm font-semibold text-slate-700 shadow-sm hover:bg-slate-50 focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2;
+    }
+
+    .btn-danger {
+        @apply inline-flex items-center justify-center rounded-xl bg-rose-600 px-4 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-rose-700 focus:outline-none focus:ring-2 focus:ring-rose-600 focus:ring-offset-2;
+    }
+
+    .badge {
+        @apply inline-flex items-center rounded-full border px-3 py-1 text-xs font-bold;
+    }
+
+    .badge-pending {
+        @apply border-amber-200 bg-amber-50 text-amber-800;
+    }
+
+    .badge-progress {
+        @apply border-teal-200 bg-teal-50 text-teal-800;
+    }
+
+    .badge-done {
+        @apply border-blue-200 bg-blue-50 text-blue-800;
+    }
+
+    .badge-cancelled {
+        @apply border-rose-200 bg-rose-50 text-rose-800;
+    }
+
+    .badge-high {
+        @apply border-rose-200 bg-rose-50 text-rose-700;
+    }
+
+    .badge-medium {
+        @apply border-amber-200 bg-amber-50 text-amber-700;
+    }
+
+    .badge-low {
+        @apply border-emerald-200 bg-emerald-50 text-emerald-700;
+    }
+
+    .alert-success {
+        @apply mb-5 rounded-xl border border-emerald-200 bg-emerald-50 px-4 py-3 text-sm font-medium text-emerald-800;
+    }
+
+    .alert-error {
+        @apply mb-5 rounded-xl border border-rose-200 bg-rose-50 px-4 py-3 text-sm font-medium text-rose-800;
+    }
+}
+
+[x-cloak] { display: none !important; }
