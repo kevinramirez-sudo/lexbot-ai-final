@@ -1,0 +1,18 @@
+# Laravel
+lexbot/.env
+lexbot/vendor/
+lexbot/node_modules/
+lexbot/storage/logs/*.log
+lexbot/bootstrap/cache/*.php
+lexbot/storage/framework/cache/*
+lexbot/storage/framework/sessions/*
+lexbot/storage/framework/views/*
+
+# Python FastAPI
+lexbot-analisis-service/venv/
+lexbot-analisis-service/__pycache__/
+lexbot-analisis-service/*.pyc
+
+# Sistema
+.DS_Store
+Thumbs.db
